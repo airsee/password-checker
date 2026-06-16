@@ -17,4 +17,4 @@ It gives your password a score out of 5 and tells you what's missing.
 ## How to run it
 
 Make sure you have Python installed, then just run:
-python password_checker.py
+python password-checker.py
