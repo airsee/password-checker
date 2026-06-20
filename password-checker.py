@@ -2,8 +2,16 @@
 # the password through 5 checks. It returns 2 values, password_strength. Then the program will print the password strength out
 # of 5, and give advice if its under 5. 
 
+import sys
+
 def main():
-    password = input("What is your password? ")
+    if len(sys.argv) > 2:
+        sys.exit("Too many arguments")
+    if len(sys.argv) == 2:
+        password = sys.argv[1]
+    else:
+        password = input("What is your password? ")
+    
     strength, tips = password_checker(password)
     print(f"Password strength: {strength}/5")
     if tips:
