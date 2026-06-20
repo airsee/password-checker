@@ -16,5 +16,10 @@ It gives your password a score out of 5 and tells you what's missing.
 
 ## How to run it
 
-Make sure you have Python installed, then just run:
+Make sure you have Python installed, then run it one of two ways:
+
+**Interactive mode:**
 python password-checker.py
+
+**Command-line mode:**
+python password-checker.py yourpassword
